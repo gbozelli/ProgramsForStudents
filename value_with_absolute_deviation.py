@@ -7,7 +7,7 @@ mean1=0
 def deviation(values):
     sumofmultiply = 0
     for i in values:
-        multiply = (i - mean1)
+        multiply = abs(i - mean1)
         sumofmultiply = sumofmultiply + multiply
     global dev
     dev = (sumofmultiply/len(values))
